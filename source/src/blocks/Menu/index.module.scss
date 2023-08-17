@@ -1,0 +1,93 @@
+@import "../../scss/breakpoints.scss";
+
+.logo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+
+	@media (max-width: $tablet) {
+		display: none;
+	}
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 32px 15px;
+	overflow: hidden;
+
+	@media (max-width: $tablet) {
+		position: fixed;
+		z-index: 999;
+		width: 100vw;
+		bottom: 0;
+		justify-content: center;
+		align-items: center;
+		gap: 32px;
+		background-color: #22222270;
+		backdrop-filter: blur(16px);
+		left: 0;
+		right: 0;
+		padding: 8px 0;
+	}
+
+	* {
+		@media (max-width: $tablet) {
+			border: none !important;
+			background-color: transparent !important;
+			font-size: 12px !important;
+			font-weight: 400 !important;
+			color: #fff !important;
+		}
+	}
+
+	svg {
+		@media (max-width: $tablet) {
+			font-size: 20px !important;
+		}
+	}
+
+	button {
+		@media (max-width: $tablet) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0 !important;
+			min-width: 0;
+		}
+
+		position: relative;
+	}
+}
+
+.list {
+	display: flex;
+	gap: 16px;
+
+	@media (max-width: $tablet) {
+		gap: 32px;
+
+	}
+}
+
+.item {
+	svg {
+		@media (min-width: $tablet) {
+			font-size: 0;
+		}
+	}
+
+	@media (max-width: $tablet) {
+		text-decoration: none !important;
+	}
+}
+
+.login {
+	display: flex;
+	gap: 8px;
+
+	@media (max-width: $tablet) {
+		gap: 32px;
+		justify-content: center;
+
+	}
+}
