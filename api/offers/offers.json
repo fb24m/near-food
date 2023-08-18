@@ -1,0 +1,14 @@
+{
+	"list": [
+		{
+			"name": "Бургеры по скидке до 20% до 25 сентября",
+			"url": "?page=catalog&catalog=burgers",
+			"image": "https://ifb24m.github.io/near-food/api/offers/1.jpg"
+		},
+		{
+			"name": "Скидка на шашлык с курицей 10% по четвергам",
+			"url": "?page=good&index=0&catalog=shashlik",
+			"image": "https://ifb24m.github.io/near-food/api/offers/2.jpg"
+		}
+	]
+}
