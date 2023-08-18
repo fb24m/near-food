@@ -1,0 +1,49 @@
+@import "../../scss/breakpoints";
+
+.goodCard {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+
+	@media (max-width: $tablet) {
+		flex-wrap: wrap;
+	}
+}
+
+.image {
+	aspect-ratio: 1/1;
+	width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	border-radius: var(--borderRadiusXLarge);
+
+	@media (max-width: $tablet) {
+		max-height: 50vh;
+	}
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex-basis: 50%;
+
+	@media (max-width: $tablet) {
+		flex-basis: 100%;
+	}
+}
+
+.block {}
+
+.buttons {
+	display: flex;
+	gap: 8px;
+}
+
+.title {}
+
+.description {}
+
+.price {}
+
+.selectGroup {}

@@ -46,7 +46,8 @@
 		}
 	}
 
-	button {
+	button,
+	a {
 		@media (max-width: $tablet) {
 			display: flex;
 			flex-direction: column;

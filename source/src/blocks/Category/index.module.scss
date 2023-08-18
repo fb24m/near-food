@@ -1,0 +1,42 @@
+@import"../../scss/breakpoints";
+
+.block {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+	flex-grow: 0 !important;
+	align-items: flex-start;
+	gap: 16px;
+
+	&:nth-child(2) {
+		flex-basis: 400px;
+		align-items: flex-end;
+	}
+
+	@media (max-width: $tablet) {
+		flex-basis: 100%;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: row !important;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+	padding: 16px 64px !important;
+
+	@media (max-width: $tablet) {
+		flex-wrap: wrap;
+		padding: 32px !important;
+		justify-content: flex-end;
+	}
+}
+
+.image {
+	max-width: 100%;
+}
+
+.copyright {
+	text-align: right;
+}

@@ -7,9 +7,9 @@ export const Menu = (): JSX.Element => (
 	<div className={styles.menu + " container"}>
 		<div className={styles.logo}>Near Food</div>
 		<ul className={styles.list}>
-			<Link href="/" className={styles.item}><HomeRegular /> Главная</Link>
-			<Link href="/offers" className={styles.item}><TagRegular />Акции</Link>
-			<Link href="catalog" className={styles.item}><StackRegular />Каталог</Link>
+			<Link href="?" className={styles.item}><HomeRegular /> Главная</Link>
+			<Link href="?page=offers" className={styles.item}><TagRegular />Акции</Link>
+			<Link href="?page=categories" className={styles.item}><StackRegular />Каталог</Link>
 		</ul>
 		<div className={styles.login}>
 			<Button icon={<CartRegular />}>Корзина</Button>
