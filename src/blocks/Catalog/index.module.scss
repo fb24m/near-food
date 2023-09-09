@@ -1,0 +1,89 @@
+.goods {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+
+	@media (max-width: 1014px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 691px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.price {
+	text-align: right !important;
+	flex-grow: 1;
+}
+
+.title {
+	height: 2em;
+	margin-bottom: .5em;
+	overflow-x: hidden;
+	hyphens: auto;
+	max-width: 100%;
+}
+
+.good {}
+
+.image {
+	aspect-ratio: 4/3;
+	object-fit: cover;
+	border-radius: var(--borderRadiusMedium);
+	max-width: 100%;
+}
+
+.option {
+	&:not(:first-child) {
+		margin-left: 10px;
+	}
+
+	&:not(:first-child) {
+		position: relative;
+
+		&::before {
+			content: '';
+
+			position: absolute;
+			top: 50%;
+			left: -11px;
+
+			display: inline-block;
+			width: 4px;
+			height: 4px;
+			background-color: #fff;
+			border-radius: 2px;
+			transform: translateY(-25%);
+
+			@media (max-width: 350px) {
+				display: none;
+			}
+		}
+	}
+
+	@media (max-width: 350px) {
+		margin: 0 !important;
+	}
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	@media (max-width: 350px) {
+		flex-direction: column;
+	}
+
+	&>* {
+		@media (max-width: 350px) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+.button {
+	flex-grow: 1;
+}

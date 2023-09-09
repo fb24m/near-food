@@ -1,0 +1,52 @@
+{
+	"list": [
+		{
+			"id": "pizza",
+			"name": "Пицца",
+			"description": "Пицца - это одно из самых популярных блюд в мире, которое можно заказать на нашем сайте доставки. Мы предлагаем широкий выбор пицц на любой вкус, от классических до экзотических. Наша пицца готовится из свежих ингредиентов и готовится на открытом огне, что гарантирует ее неповторимый вкус и аромат.",
+			"image": "https://ifb24m.github.io/near-food/api/categories/pizza.png",
+			"copyright_link": "https://ru.freepik.com/free-photo/traditional-supreme-pizza-on-black-stone_21938100.htm",
+			"copyright_text": "Изображение от chandlervid85 на Freepik"
+		},
+		{
+			"id": "burgers",
+			"name": "Бургеры",
+			"description": "Бургеры - это не просто еда, это стиль жизни! У нас вы найдете огромный выбор бургеров на любой вкус - от классических до острых и экзотических. Мы используем только свежие ингредиенты и готовим бургеры на гриле, чтобы сохранить их сочность и аромат. Заказывайте бургеры у нас и наслаждайтесь настоящим вкусом!",
+			"image": "https://ifb24m.github.io/near-food/api/categories/burger.png",
+			"copyright_link": "https://ru.freepik.com/free-photo/tasty-burger-isolated-on-white-background-fresh-hamburger-fastfood-with-beef-and-cheese_38117312.htm",
+			"copyright_text": "Изображение от svstudioart на Freepik"
+		},
+		{
+			"id": "shashlik",
+			"name": "Шашлык",
+			"description": "Шашлык - это блюдо, которое является одним из самых популярных в мире. Оно готовится из мяса, рыбы или овощей, и обычно жарится на гриле или на углях. Шашлык может быть приготовлен как на открытом воздухе, так и в домашних условиях. Он имеет неповторимый вкус и аромат, который невозможно передать словами.",
+			"image": "https://ifb24m.github.io/near-food/api/categories/shashlik.png",
+			"copyright_link": "https://ru.freepik.com/free-photo/meat-skewer-with-vegetables-isolated-on-white-background-ai-generative_43227614.htm",
+			"copyright_text": "Изображение от chandlervid85 на Freepik"
+		},
+		{
+			"id": "pasta",
+			"name": "Паста",
+			"description": "Паста - это итальянское блюдо, которое готовится из тонких длинных макаронных изделий, таких как спагетти, феттучини, лингвини и т.д., и подается с различными соусами, такими как томатный, болоньезе, песто и т.д. Паста может быть приготовлена различными способами, например, вареной, обжаренной или запеченной. Она имеет насыщенный вкус и текстуру, которая обязательно понравится всем любителям итальянской кухни.",
+			"image": "https://ifb24m.github.io/near-food/api/categories/pasta.png",
+			"copyright_link": "https://www.freepik.com/free-photo/gourmet-italian-bolognese-pasta-with-fresh-parmesan-generated-by-ai_40967540.htm",
+			"copyright_text": "Image by vecstock on Freepik"
+		},
+		{
+			"id": "desserts",
+			"name": "Десерты",
+			"description": "Десерты - это сладкие блюда, которые являются отличным дополнением к любому приему пищи. На нашем сайте вы найдете широкий выбор десертов на любой вкус: от классических тортов и пирожных до экзотических фруктов и мороженого. Мы предлагаем только свежие и качественные продукты, которые не оставят вас равнодушными. Закажите свой любимый десерт прямо сейчас!",
+			"image": "https://ifb24m.github.io/near-food/api/categories/dessert.png",
+			"copyright_link": "https://www.freepik.com/free-photo/zoom-view-little-round-cake-decorated-with-strawberries-white-plate_29043510.htm",
+			"copyright_text": "Image by 8photo on Freepik"
+		},
+		{
+			"id": "drinks",
+			"name": "Напитки",
+			"description": "На нашем сайте доставки вы найдете широкий ассортимент напитков на любой вкус. Мы предлагаем коктейли, сок, газировку и многое другое. Все напитки свежие и высокого качества. Закажите свой любимый напиток прямо сейчас и наслаждайтесь вкусом!",
+			"image": "https://ifb24m.github.io/near-food/api/categories/drink.png",
+			"copyright_link": "https://www.freepik.com/free-photo/traditional-mojito-with-ice-mint-table_6022848.htm",
+			"copyright_text": "Image by KamranAydinov on Freepik"
+		}
+	]
+}
