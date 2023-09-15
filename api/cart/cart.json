@@ -1,0 +1,14 @@
+{
+	"list": [
+		{
+			"catalog": "burgers",
+			"index": "2",
+			"count": "1"
+		},
+		{
+			"catalog": "pizza",
+			"index": "0",
+			"count": "2"
+		}
+	]
+}
