@@ -24,3 +24,72 @@
 Сборка приложения для деплоя, один файл на каждый язык, JavaScript
 ## Превью - npm run preview
 Превью готового собранного приложения на локальном сервере
+
+## Документация API
+Список категорий - https://near-food.fb24m.ru/api/categories/categories.json
+
+Структура:
+
+```TypeScript
+interface ICategory {
+  id: string
+  name: string
+  description: string
+  image: string
+  copyright_link: string
+  copyright_text: string
+}
+interface CategoryResponse {
+  list: ICategory[]
+}
+```
+
+Список каталога - https://near-food.fb24m.ru/api/catalog/NAME.json
+
+NAME - burgers / pizza / shashlik
+
+Структура
+```TypeScript
+interface ICatalog {
+  image: string
+  name: string
+  description: string
+  price: number
+  options?: {
+    name: string
+    values: { value: string, price: number }[]
+  }[]
+}
+interface CatalogResponse {
+  list: ICatalog[]
+}
+```
+
+Корзина - https://near-food.fb24m.ru/api/cart/cart.json
+
+Структура
+```TypeScript
+interface ICart {
+  image: string
+  name: string
+  description: string
+  price: number
+  count: number
+}
+interface CartResponse {
+  list: ICart[]
+}
+```
+
+Акции - https://near-food.fb24m.ru/api/offers/offers.json
+
+```TypeScript
+interface IOffer {
+  name: string
+  url: string
+  image: string
+}
+intergace OffersResponse {
+  list: IOffer[]
+}
+```
