@@ -16,7 +16,7 @@
 
 ## Результат
 
-Исходный код - https://github.com/ifb24m/near-food
+Исходный код - [https://github.com/ifb24m/near-food](https://github.com/iFB24M/near-food/tree/source)
 
 Приложение - https://near-food.fb24m.ru
 
