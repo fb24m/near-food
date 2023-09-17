@@ -10,6 +10,10 @@ a {
 	color: #fff;
 }
 
+img {
+	max-width: 100%;
+}
+
 body {
 	background-color: #292929;
 	padding-bottom: 150px;
@@ -19,4 +23,19 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 15px;
+}
+
+.buttons {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.inputs {
+	display: flex;
+	gap: 8px;
+
+	&>* {
+		flex-grow: 1;
+	}
 }

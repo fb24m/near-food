@@ -1,33 +1,29 @@
 import styles from "./index.module.scss";
+import React from 'react';
 
-import { useState } from "react";
-import { Spinner } from "@fluentui/react-components";
-
-import { Good } from "../../blocks/Good";
-
-import { request, GoodResponse, IGood } from "../../functions/request";
 import { getQueryVariable } from "../../functions/getQueryVariable";
+import { useRequest } from "../../hooks/useRequest";
 
-const catalog = getQueryVariable('catalog');
+import { IError } from "../../interfaces/error.interface";
+import { QueryTypes } from "../../enums/queryTypes.enum";
 
-export const Catalog = (): JSX.Element => {
-	const [loaded, setLoaded] = useState(false);
-	const [goods, setGoods] = useState<IGood[]>([]);
+import { Good, GoodProps } from "../../components/Good";
+import { RequestHandler } from "../../components/RequestHandler";
 
-	if (!loaded) {
-		request(`https://ifb24m.github.io/near-food/api/catalog/${catalog}.json`, (json: GoodResponse) => {
-			setGoods(json.list);
-			setLoaded(true);
-		});
-	}
+const catalog: string = getQueryVariable('catalog');
 
-	if (!loaded) return <Spinner />
+export const Catalog = (): React.ReactElement => {
+	const { isLoading, isError, isSuccess, error, data } = useRequest(QueryTypes.goods, catalog);
 
-	return (
-		<div className={styles.goods + " container"}>
-			{goods.map((good, index) => (
-				<Good key={index} index={index} price={good.price} image={good.image} title={good.name} />
-			))}
-		</div>
-	);
+	return <RequestHandler
+		states={{ isLoading, isError, isSuccess }}
+		error={error as IError}
+		body={
+			<div className={styles.goods + " container"}>
+				{data ? data.list.map((good: GoodProps, index: number) => (
+					<Good key={index} index={index} price={good.price} image={good.image} name={good.name} />
+				)) : ''}
+			</div>
+		}
+	/>
 };

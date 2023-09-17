@@ -1,11 +1,11 @@
-export const getQueryVariable = (variable: string): string | false => {
+export const getQueryVariable = (variable: string): string => {
 	try {
-		const variables: string[] = location.search.replace('?', '').split('&');
+		const variables: string[] = location.href.split('?')[1].split('&');
 
-		for (let i = 0; i < variable.length; i++) {
+		for (let i = 0; i < variables.length; i++) {
 			const thisVar: string = variables[i];
 
-
+			console.log(thisVar);
 
 			const name: string = thisVar.split('=')[0];
 			const value: string = thisVar.split('=')[1];
@@ -15,8 +15,8 @@ export const getQueryVariable = (variable: string): string | false => {
 			}
 		}
 	}
-	catch {
-		return false;
+	catch (e) {
+		return 'error ' + e;
 	}
-	return false;
+	return 'not found';
 };

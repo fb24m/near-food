@@ -12,7 +12,7 @@ export interface IGood {
 	name: string,
 	description: string,
 	price: number,
-	options?: { name: string, values: { value: string, price: string }[] }[],
+	options?: [],
 };
 export interface GoodResponse {
 	list: IGood[]
