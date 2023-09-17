@@ -1,3 +1,5 @@
+![image](https://github.com/iFB24M/near-food/assets/103760918/1a4c4c9b-7d44-4825-980b-473898686f64)
+
 # Near Food - Приложение доставки еды на React
 
 <div style="display:flex;gap:8px;flex-wrap:wrap">
